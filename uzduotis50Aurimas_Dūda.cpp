@@ -253,17 +253,14 @@ public:
 				pTemp = pTemp->next;
 			}
 		}
-		if (vkryptis == "Vakarai") {
-			cout << "\nUz vakarus pasisako: " << v << " zmones";
-		}
-		else if (vkryptis == "Siaure") {
-			cout << "\nUz siaure  pasisako: " << s << " zmones";
-		}
-		else if (vkryptis == "Pietus") {
-			cout << "\nUz pietus  pasisako: " << p << " zmones";
-		}
-		else if (vkryptis == "Rytai") {
-			cout << "\nUz rytus   pasisako: " << r << " zmones";
+		
+		switch(vkryptis)
+		{
+			case "Vakarai": cout << "\nUz vakarus pasisako: " << v << " zmones"; break;
+			case "Siaure": cout << "\nUz siaure  pasisako: " << s << " zmones"; break;
+			case "Pietus": cout << "\nUz pietus  pasisako: " << p << " zmones"; break;
+			case "Rytai": cout << "\nUz rytus   pasisako: " << r << " zmones"; break;
+			default: cout << "nera" << break;
 		}
 
 	}
